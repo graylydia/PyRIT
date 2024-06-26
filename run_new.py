@@ -3,7 +3,7 @@ import json
 from transformers import AutoModelForCausalLM, AutoTokenizer #type: ignore
 
 # Set up environment variables for Hugging Face
-os.environ["HUGGINGFACE_TOKEN"] = "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"
+os.environ["HUGGINGFACE_TOKEN"] = "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"
 
 trust_remote_code = True
 
@@ -13,7 +13,7 @@ results_path = os.path.join(base_path, "conversation_results.json")
 
 # Load models and tokenizers
 attacker_model_name = "THUDM/glm-4-9b-chat"
-defender_model_name = "meta-llama/Meta-Llama-3-8B"
+defender_model_name = "mistralai/Mixtral-8x7B-v0.1"
 
 attacker_model = AutoModelForCausalLM.from_pretrained(attacker_model_name, trust_remote_code=True, token=os.environ["HUGGINGFACE_TOKEN"])
 attacker_tokenizer = AutoTokenizer.from_pretrained(attacker_model_name, token=os.environ["HUGGINGFACE_TOKEN"])
