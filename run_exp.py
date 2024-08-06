@@ -3,7 +3,7 @@ import json
 from transformers import AutoModelForCausalLM, AutoTokenizer #type: ignore
 
 # Set up environment variables for Hugging Face
-os.environ["HUGGINGFACE_TOKEN"] = "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"
+os.environ["HUGGINGFACE_TOKEN"] = "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"
 
 # Paths
 base_path = '/home/grayl/PyRIT' #CHANGE TO YOUR BASE PATH 
